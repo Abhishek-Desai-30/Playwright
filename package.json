@@ -1,0 +1,24 @@
+{
+  "name": "playwright-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "auth:qa": "set TEST_ENV=optum.qa && node auth.setup.js",
+    "test:qa": "set TEST_ENV=optum.qa && playwright test",
+    "test:regress": "set TEST_ENV=optum.regress && playwright test",
+    "test:dryrun": "set TEST_ENV=optum.dryrun && playwright test",
+    "test:shqa": "set TEST_ENV=shqa && playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
