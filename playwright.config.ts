@@ -60,18 +60,18 @@ export default defineConfig({
     //trace: 'on-first-retry',
 
     baseURL: process.env.BASE_URL ||
-        'https://esync-shqa.optum.com/',
+      'https://esync-shqa.optum.com/',
 
     //browserName: 'chromium',
     channel: 'msedge',
     headless: false,
-    
+
     ignoreHTTPSErrors: true,
 
     //storageState: '.auth/user.json',
     storageState: undefined,
 
-    launchOptions:{
+    launchOptions: {
 
       timeout: 180000,
 
@@ -92,16 +92,35 @@ export default defineConfig({
     // use: { ...devices['Desktop Chrome'] },
     // },
 
+
+
     {
-      name: 'Microsoft Edge',
+      name: 'setup',
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+      },
+      testMatch: /.*\.setup\.ts/,
+      timeout: 180000,
+    },
+
+    {
+      name: 'behind-login',
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        storageState: '.auth/user.json',
+      },
+      dependencies: ['setup'],
+      timeout: 180000,
     },
 
     // {
-    // name: 'Microsoft Edge',
-    // use: {
-    //   ...devices['Desktop Edge'],
-    //   channel: 'msedge',
-    //     },
+    //   name: 'Microsoft Edge',
+    //   use: {
+    //     ...devices['Desktop Edge'],
+    //     channel: 'msedge',
+    //   },
     // },
 
     /* Test against mobile viewports. */
