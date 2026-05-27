@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "auth:qa": "set TEST_ENV=optum.qa && node auth.setup.js",
     "test:qa": "set TEST_ENV=optum.qa && playwright test",
-    "test:regress": "set TEST_ENV=optum.regress && playwright test",
+    "test:regress": "set TEST_ENV=regress && npx playwright test --config=playwright.config.ts",
     "test:dryrun": "set TEST_ENV=optum.dryrun && playwright test",
     "test:shqa": "set TEST_ENV=shqa && playwright test"
   },

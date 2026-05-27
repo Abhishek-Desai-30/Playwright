@@ -1,22 +1,64 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import path from 'path';
+import fs from 'fs';
 
-const env =
-  process.env.TEST_ENV ||
-  'optum.qa';
+const env = process.env.TEST_ENV || 'optum.qa';
 
-dotenv.config({
-  path: path.resolve(
-    __dirname,
-    `.env.${env}`
-  ),
+const envFilePath = path.resolve(
+  process.cwd(),
+  `.env.${env}`
+);
+
+console.log('==== Playwright Config Debug ====');
+console.log('Current working directory:', process.cwd());
+console.log('TEST_ENV:', process.env.TEST_ENV || 'not set (using default: optum.qa)');
+console.log('Looking for env file:', envFilePath);
+console.log('File exists:', fs.existsSync(envFilePath));
+
+// Load the env file
+if (fs.existsSync(envFilePath)) {
+  const result = dotenv.config({ path: envFilePath, override: true });
+  if (result.error) {
+    console.error('❌ Error loading env file:', result.error.message);
+  } else {
+    console.log('✅ Successfully loaded env file');
+    if (result.parsed) {
+      console.log('Loaded variables:', Object.keys(result.parsed).join(', '));
+    }
+  }
+} else {
+  console.warn(`⚠️  File not found: ${envFilePath}`);
+  console.warn('Make sure you run the command from the project root directory');
+}
+
+console.log('BASE_URL from environment:', process.env.BASE_URL);
+console.log('====================================\n');
+
+/*
+
+console.log('looking for env file at:', envFilePath);
+
+console.log('Env file exists:', fs.existsSync(envFilePath));
+
+
+const result = dotenv.config({
+  path: envFilePath,
   override: true
 });
+
+
+if (result.error) {
+  console.error('Error loading env file:', result.error);
+} else {
+  console.log('Successfully loaded environment .env file', envFilePath);  
+  console.log('Parsed variables:', result.parsed);
+}
 
 console.log('process.env.TEST_ENV:', process.env.TEST_ENV);
 console.log('playwright config file ENV:', env);
 console.log('playwright config file BASE_URL:', process.env.BASE_URL);
+*/
 
 /**
  * Read environment variables from file.
@@ -31,10 +73,7 @@ console.log('playwright config file BASE_URL:', process.env.BASE_URL);
  */
 export default defineConfig({
   timeout: 180000,
-
-  expect: {
-    timeout: 240000
-  },
+  expect: { timeout: 240000 },
 
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -48,9 +87,6 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
 
-  //globalSetup: './global-setup.ts',
-
-
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -59,8 +95,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     //trace: 'on-first-retry',
 
-    baseURL: process.env.BASE_URL ||
-      'https://esync-shqa.optum.com/',
+    baseURL: process.env.BASE_URL,
 
     //browserName: 'chromium',
     channel: 'msedge',
