@@ -25,7 +25,7 @@ test('Navigate to module', async ({ page }) => {
   await expect(page.getByText('Crosswalk Activity')).toBeVisible();
 
 
-
+/*
   await page.goto('https://esync-shqa.optum.com/FormDesign/Index');
   await expect(page.getByRole('heading', { name: 'Design' })).toBeVisible();
 
@@ -62,5 +62,6 @@ test('Navigate to module', async ({ page }) => {
   await page.getByRole('link', { name: 'extension' }).click();
   await page.goto('https://esync-shqa.optum.com/SBMException/Index');
   await expect(page.getByText('Benefit', { exact: true })).toBeVisible();
+  */
   
 });

@@ -1,21 +1,27 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import path from 'path';
-import fs from 'fs';
 
 // Load environment variables from .env file based on ENV variable
-const env = process.env.ENV || 'optum.qa';
+const env = (process.env.ENV || 'optum.qa').trim();
 const envFile = `.env.${env}`;
+const envPath = path.resolve(__dirname, envFile);
 
-try {
-  dotenv.config({
-    path: envFile,
-    override: true
-  });
-  console.log(`Loaded environment from: ${envFile}`);
-} catch (e) {
-  console.error(`Error loading environment file ${envFile}:`, e);
+const dotenvResult = dotenv.config({
+  path: envPath,
+  override: true
+});
+
+if (dotenvResult.error) {
+  if ((dotenvResult.error as { code?: string }).code === 'ENOENT') {
+    console.warn(`Environment file not found: ${envPath}. Continuing with existing process.env values.`);
+  } else {
+    throw new Error(`Error loading environment file ${envPath}: ${dotenvResult.error.message}`);
+  }
+} else {
+  console.log(`Loaded environment from: ${envPath}`);
 }
+
 
 console.log('process.env.ENV:', process.env.ENV);
 console.log('playwright config file BASE_URL:', process.env.BASE_URL);

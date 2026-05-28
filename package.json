@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:qa": "set ENV=optum.qa && playwright test",
-    "test:regress": "set ENV=regress && npx playwright test ",
-    "test:dryrun": "set ENV=optum.dryrun && playwright test",
-    "test:shqa": "set ENV=shqa && playwright test"
+    "test:qa": "set \"ENV=optum.qa\" && playwright test",
+    "test:regress": "set \"ENV=regress\" && npx playwright test",
+    "test:dryrun": "set \"ENV=optum.dryrun\" && playwright test",
+    "test:shqa": "set \"ENV=shqa\" && playwright test"
   },
   "keywords": [],
   "author": "",

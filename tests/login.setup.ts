@@ -8,6 +8,7 @@ setup('login setup', async ({ }) => {
         await chromium.launchPersistentContext(
             `C:/temp/edge-profile`,
             {
+                baseURL: process.env.BASE_URL,
                 channel: 'msedge',
                 headless: false,
                 args: [
