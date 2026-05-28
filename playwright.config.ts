@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 
 // Load environment variables from .env file based on ENV variable
-const env = (process.env.ENV || 'optum.qa').trim();
+const env = (process.env.ENV || 'qa').trim();
 const envFile = `.env.${env}`;
 const envPath = path.resolve(__dirname, envFile);
 

@@ -3,10 +3,11 @@ import path from "node:path";
 
 async function globalSetup() {
 
-    const env =
+    const env: string =
         process.env.TEST_ENV ||
         process.env.ENV ||
-        'optum.qa';
+        '';
+
     const envName = env.trim();
 
     const dotenvResult = dotenv.config({
