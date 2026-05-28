@@ -3,62 +3,26 @@ import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
 
-const env = process.env.TEST_ENV || 'optum.qa';
+// Load environment variables from .env file
 
-const envFilePath = path.resolve(
-  process.cwd(),
-  `.env.${env}`
-);
 
-console.log('==== Playwright Config Debug ====');
-console.log('Current working directory:', process.cwd());
-console.log('TEST_ENV:', process.env.TEST_ENV || 'not set (using default: optum.qa)');
-console.log('Looking for env file:', envFilePath);
-console.log('File exists:', fs.existsSync(envFilePath));
+try{
+  if (process.env.ENV) {
+     dotenv.config({
+          path: `.env.${process.env.ENV}`,
+        override: true
+     });
+  };
 
-// Load the env file
-if (fs.existsSync(envFilePath)) {
-  const result = dotenv.config({ path: envFilePath, override: true });
-  if (result.error) {
-    console.error('❌ Error loading env file:', result.error.message);
-  } else {
-    console.log('✅ Successfully loaded env file');
-    if (result.parsed) {
-      console.log('Loaded variables:', Object.keys(result.parsed).join(', '));
-    }
   }
-} else {
-  console.warn(`⚠️  File not found: ${envFilePath}`);
-  console.warn('Make sure you run the command from the project root directory');
-}
-
-console.log('BASE_URL from environment:', process.env.BASE_URL);
-console.log('====================================\n');
-
-/*
-
-console.log('looking for env file at:', envFilePath);
-
-console.log('Env file exists:', fs.existsSync(envFilePath));
+  catch (e) {
+    console.error('Error loading environment variables:', e);
+  }
 
 
-const result = dotenv.config({
-  path: envFilePath,
-  override: true
-});
 
-
-if (result.error) {
-  console.error('Error loading env file:', result.error);
-} else {
-  console.log('Successfully loaded environment .env file', envFilePath);  
-  console.log('Parsed variables:', result.parsed);
-}
-
-console.log('process.env.TEST_ENV:', process.env.TEST_ENV);
-console.log('playwright config file ENV:', env);
+console.log('process.env.ENV:', process.env.ENV);
 console.log('playwright config file BASE_URL:', process.env.BASE_URL);
-*/
 
 /**
  * Read environment variables from file.
@@ -140,11 +104,12 @@ export default defineConfig({
     },
 
     {
-      name: 'behind-login',
+      name: 'regress',
       use: {
         ...devices['Desktop Edge'],
         channel: 'msedge',
         storageState: '.auth/user.json',
+        baseURL: 'https://esync-shregress.optum.com/',
       },
       dependencies: ['setup'],
       timeout: 180000,
