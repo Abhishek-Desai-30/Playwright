@@ -21,7 +21,7 @@ setup('login setup', async ({ }) => {
     const page = await context.pages()[0];
 
     await page.goto(
-        '/Dashboard/Index'
+        '/'
     );
 
 
@@ -39,11 +39,12 @@ setup('login setup', async ({ }) => {
     const selectRole = page.getByText("Select Role");
 
     try {
-
         await selectRole.waitFor({ state: 'visible', timeout: 120000 })
-
+        if (await selectRole.isVisible()) {
         await page.locator('#roleChangeID').selectOption('24');
         await page.getByRole('button', { name: 'Proceed' }).click();
+        }
+
     } catch (e) {
         console.log('Role selection failed:', e);
     }
