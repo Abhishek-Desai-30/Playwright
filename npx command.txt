@@ -1,0 +1,2 @@
+$env:BASE_URL="https://esync-shnptst.optum.com/"
+npx playwright test

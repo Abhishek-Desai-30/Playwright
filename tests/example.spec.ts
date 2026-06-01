@@ -1,28 +1,18 @@
 /// <reference types="node" />
-import { test, expect, Page } from '@playwright/test';
-import fs from 'fs';
-
-test('Navigate to module', async ({ page }) => {
-
-  await page.goto(
-    '/Dashboard/Index'
-  );
-
-  const portfolio = page.locator('#PortfolioSearch');
-
-  await portfolio.isVisible();
-  await portfolio.click();
-
-  await expect(page.getByRole('heading', { name: 'Portfolio' })).toContainText('Portfolio');
-
-  await page.pause();
-
-  await page.getByText(' Expansion & Structure UI').click();
-  await expect(page.locator('#jqgh_comparePlanGrid_Contract')).toBeVisible();
+import { test } from '../fixture/base';
+import { LandingPage } from '../page/LandingPage';
 
 
-  await page.getByRole('link', { name: 'Structure UI' }).click();
-  await expect(page.getByText('Crosswalk Activity')).toBeVisible();
+test('Navigate to module', async ({ landingPage }) => {
+
+  await landingPage.gotoPage();
+  await landingPage.navigateToPartfolio();
+  await landingPage.navigateToExpansion();
+  await landingPage.navigateToStructureUI();
+  
+
+
+  
 
 
 /*

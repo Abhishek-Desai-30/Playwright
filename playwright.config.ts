@@ -9,7 +9,7 @@ const envPath = path.resolve(__dirname, envFile);
 
 const dotenvResult = dotenv.config({
   path: envPath,
-  override: true
+  override: false
 });
 
 if (dotenvResult.error) {
@@ -54,6 +54,7 @@ export default defineConfig({
     headless: false,
     ignoreHTTPSErrors: true,
     trace: 'on-first-retry',
+    screenshot:'only-on-failure',
     storageState: undefined,
     launchOptions: {
       timeout: 180000,
@@ -84,7 +85,7 @@ export default defineConfig({
         storageState: '.auth/user.json',
         baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
       },
-      dependencies: ['setup'],
+      // dependencies: ['setup'],
       timeout: 180000,
     },
   ],
