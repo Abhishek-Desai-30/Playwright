@@ -31,7 +31,7 @@ console.log('playwright config file BASE_URL:', process.env.BASE_URL);
  */
 export default defineConfig({
   timeout: 180000,
-  expect: { timeout: 240000 },
+  expect: { timeout: 120000 },
 
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -85,7 +85,7 @@ export default defineConfig({
         storageState: '.auth/user.json',
         baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
       },
-      // dependencies: ['setup'],
+      dependencies: ['setup'],
       timeout: 180000,
     },
   ],

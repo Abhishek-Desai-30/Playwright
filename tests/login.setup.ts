@@ -55,5 +55,6 @@ setup('login setup', async ({ }) => {
     await expect(workQueue).toBeVisible();
 
     await page.context().storageState({ path: '.auth/user.json' });
+    await context.close();
 
 });
