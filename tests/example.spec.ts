@@ -3,9 +3,10 @@ import { test } from '../fixture/base';
 import { LandingPage } from '../page/LandingPage';
 
 
-test('Navigate to all module', async ({ landingPage }) => {
+test('Navigate to all ems module', async ({ landingPage, page }) => {
 
   await landingPage.gotoPage();
+  
   await landingPage.navigateToPartfolio();
   await landingPage.navigateToExpansion();
   await landingPage.navigateToStructureUI();
@@ -13,7 +14,7 @@ test('Navigate to all module', async ({ landingPage }) => {
   await landingPage.navigateToRuleManager();
   await landingPage.navigateToMasterlist();
   await landingPage.navigateToGroupBenefitSearch();
-  await landingPage.navigateToReportingCenter();
+    await landingPage.navigateToReportingCenter();
   await landingPage.navigateToCollateralEngine();
   await landingPage.navigateToSettings();
   await landingPage.navigateToGlobalUpdates();
@@ -23,5 +24,8 @@ test('Navigate to all module', async ({ landingPage }) => {
   await landingPage.navigateToRankingAndPrioritization();
   await landingPage.navigateToSBM();
   
-  
+});
+
+test('Navigate to all mcare module', async ({ landingPage, page }) => {
+  await landingPage.gotoMcarePage();
 });

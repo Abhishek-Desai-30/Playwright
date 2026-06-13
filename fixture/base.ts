@@ -1,17 +1,22 @@
-import { test as base } from "@playwright/test";
+import { test as base, BrowserContext } from "@playwright/test";
 import { LandingPage } from "../page/LandingPage";
-
 
 type MyFixtures = {
     landingPage: LandingPage,
 }
 
 
-
 export const test = base.extend<MyFixtures>({
 
-    landingPage: async ({ page }, use) => {
-        await use(new LandingPage(page));
+    landingPage: async ({ page, context }, use) => {
+
+        await page.addInitScript(() => {
+            document.addEventListener('DOMContentLoaded', ()=>{
+                (document.body.style as any).zoom = '90%';
+            })
+        });
+
+        await use(new LandingPage(page, context));
     }
 
 })

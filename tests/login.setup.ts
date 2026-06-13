@@ -11,10 +11,6 @@ setup('login setup', async ({ }) => {
                 baseURL: process.env.BASE_URL,
                 channel: 'msedge',
                 headless: false,
-                args: [
-                    '--start-maximized',
-                    '--disable-blink-features=AutomationControlled',
-                ],
             }
         );
 

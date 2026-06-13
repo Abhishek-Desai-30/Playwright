@@ -82,6 +82,14 @@ export default defineConfig({
       use: {
         ...devices['Desktop Edge'],
         channel: 'msedge',
+        headless: false,
+        viewport: null,
+        launchOptions:{
+              args: [
+                    '--start-maximized',
+                    '--disable-blink-features=AutomationControlled',
+                ],
+        },
         storageState: '.auth/user.json',
         baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
       },
