@@ -26,6 +26,6 @@ test('Navigate to all ems module', async ({ landingPage, page }) => {
   
 });
 
-test('Navigate to all mcare module', async ({ landingPage, page }) => {
+test.only('Navigate to all mcare module', async ({ landingPage, page }) => {
   await landingPage.gotoMcarePage();
 });

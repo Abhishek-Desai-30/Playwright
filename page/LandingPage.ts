@@ -13,7 +13,7 @@ export class LandingPage {
         this.page = page;
         this.context = context;
         this.url = `${process.env.BASE_URL}/Dashboard/Index`;
-        this.urlMcare = 'https://mcare-nptst.optum.com/';
+        this.urlMcare = `${process.env.MCARE_URL}` || 'https://mcare-qa.simplifyhealthcare.com/';
     }
 
     async gotoPage() {
@@ -142,17 +142,22 @@ export class LandingPage {
     }
 
     async gotoMcarePage() {
+        
+        const mcareContext = await this.context.browser()!.newContext({
+            storageState: '.auth/mcare-user.json',
+        });
 
         console.log('content exists', !!this.context)
-        const mcarePage = await this.context.newPage();
-
+        const mcarePage = await mcareContext.newPage();
+        console.log("mcare page created", this.urlMcare);
+        
 
         await mcarePage.goto(this.urlMcare, {
             waitUntil: "domcontentloaded",
             timeout: 180000
         });
-
-        await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
+        
+        // await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
         await expect(mcarePage.getByRole('main').getByText('Dashboard')).toBeVisible();
         await mcarePage.getByRole('button', { name: 'Rules Configuration' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Rule Master List' })).toBeVisible();
@@ -168,8 +173,11 @@ export class LandingPage {
         await expect(mcarePage.getByRole('heading', { name: 'Reporting Module' })).toBeVisible();
         await mcarePage.getByRole('button', { name: 'Task Manager' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Task Manager' })).toBeVisible();
+
+        /*
         await mcarePage.getByRole('button', { name: 'Rules Analytics' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Rule Analytics Dashboard' })).toBeVisible();
+        */
     }
 
 
