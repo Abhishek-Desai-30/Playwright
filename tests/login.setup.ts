@@ -45,12 +45,11 @@ setup('login setup', async ({ }) => {
         console.log('Role selection failed:', e);
     }
 
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-
     const workQueue = page.locator('xpath=//*[text()="Work Queue"]').first();
+    await workQueue.scrollIntoViewIfNeeded();
     await expect(workQueue).toBeVisible();
 
     await page.context().storageState({ path: '.auth/user.json' });
-    await context.close();
+    //await context.close();
 
 });

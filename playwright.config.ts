@@ -70,7 +70,6 @@ export default defineConfig({
     {
       name: 'setup',
       use: {
-        ...devices['Desktop Edge'],
         channel: 'msedge',
       },
       testMatch: /.*\.setup\.ts/,
@@ -80,7 +79,6 @@ export default defineConfig({
     {
       name: 'regress',
       use: {
-        ...devices['Desktop Edge'],
         channel: 'msedge',
         headless: false,
         viewport: null,

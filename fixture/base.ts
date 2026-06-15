@@ -10,7 +10,7 @@ export const test = base.extend<MyFixtures>({
 
     landingPage: async ({ page, context }, use) => {
 
-        await page.addInitScript(() => {
+        await context.addInitScript(() => {
             document.addEventListener('DOMContentLoaded', ()=>{
                 (document.body.style as any).zoom = '90%';
             })

@@ -6,7 +6,7 @@ export class LandingPage {
     readonly page: Page;
     readonly context: BrowserContext;
     url: string;
-    urlMcare : string;
+    urlMcare: string;
 
     constructor(page: Page, context: BrowserContext) {
         console.log("LandingPage initialized");
@@ -31,14 +31,12 @@ export class LandingPage {
             throw e;
         }
 
-        await this.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
 
         const workQueue = this.page.locator('xpath=//*[text()="Work Queue"]').first();
+        await workQueue.scrollIntoViewIfNeeded();
         await expect.soft(workQueue).toBeVisible();
 
-        await this.page.evaluate(() => {
-            document.body.style.zoom = '90%';
-        });
+
     }
 
     public async navigateToPartfolio() {
@@ -137,7 +135,7 @@ export class LandingPage {
     }
 
     async navigateToSBM() {
-        await this.page.evaluate(() => { document.body.style.zoom = '90%'; });
+
         const sbmException = this.page.locator('#sbmexceptionui');
         await sbmException.click();
         await expect.soft(this.page.getByRole('heading', { name: /SBM Exception/i }).first()).toBeVisible();
@@ -145,12 +143,14 @@ export class LandingPage {
 
     async gotoMcarePage() {
 
-        console.log('content exists', !!this.context )
+        console.log('content exists', !!this.context)
         const mcarePage = await this.context.newPage();
-        await mcarePage.goto( this.urlMcare,{
-                waitUntil: "domcontentloaded",
-                timeout: 180000
-            });
+
+
+        await mcarePage.goto(this.urlMcare, {
+            waitUntil: "domcontentloaded",
+            timeout: 180000
+        });
 
         await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
         await expect(mcarePage.getByRole('main').getByText('Dashboard')).toBeVisible();
