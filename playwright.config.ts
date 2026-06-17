@@ -125,5 +125,12 @@ export default defineConfig({
       testMatch: '**/example.spec.ts',
       timeout: 180000,
     },
+
+    {
+  name: 'utility',
+  testMatch: '**/example.spec.ts',
+  timeout: 60000,
+  // no dependencies, no storageState, no baseURL — just pure Node
+},
   ],
 });
