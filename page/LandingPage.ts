@@ -159,14 +159,22 @@ export class LandingPage {
         
         // await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
         await expect(mcarePage.getByRole('main').getByText('Dashboard')).toBeVisible();
+
         await mcarePage.getByRole('button', { name: 'Rules Configuration' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Rule Master List' })).toBeVisible();
+        await expect(mcarePage.locator("td.MuiTableCell-root div.MuiBox-root").first()).toBeVisible();
+
         await mcarePage.getByRole('button', { name: 'Cascade & Plan View' }).click();
         await expect(mcarePage.getByRole('button', { name: 'Cascade History' })).toBeVisible();
+        await expect(mcarePage.locator("td.MuiTableCell-sizeMedium span").first()).toBeVisible();
+
         await mcarePage.getByRole('button', { name: 'Plan View', exact: true }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Plan View' })).toBeVisible();
+        await expect(mcarePage.locator("td.MuiTableCell-root").first()).toBeVisible();
+
         await mcarePage.getByRole('button', { name: 'Activity Logs' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'Activity Logs' })).toBeVisible();
+
         await mcarePage.getByRole('button', { name: 'Admin Console' }).click();
         await expect(mcarePage.getByRole('heading', { name: 'JSON Summary' })).toBeVisible();
         await mcarePage.getByRole('button', { name: 'Reporting Center' }).click();
