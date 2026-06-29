@@ -16,7 +16,11 @@ export const test = base.extend<MyFixtures>({
             })
         });
 
-        await use(new LandingPage(page, context));
+        const landingPage = new LandingPage(page,context);
+
+        await use(landingPage);
+
+        await landingPage.closeMcareContext();
     }
 
 })

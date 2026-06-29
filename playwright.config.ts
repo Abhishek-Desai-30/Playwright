@@ -33,7 +33,7 @@ export default defineConfig({
   timeout: 180000,
   expect: { timeout: 120000 },
   
-
+  repeatEach: 10, //Repeat every test case 10 times
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -123,7 +123,7 @@ export default defineConfig({
       },
       // dependencies: ['mcare-setup','setup'],
       testMatch: '**/example.spec.ts',
-      timeout: 180000,
+      timeout: 30000,
     },
 
     {
