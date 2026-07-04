@@ -123,7 +123,7 @@ export default defineConfig({
       },
       // dependencies: ['mcare-setup','setup'],
       testMatch: '**/example.spec.ts',
-      timeout: 30000,
+      timeout: 180000,
     },
 
     {

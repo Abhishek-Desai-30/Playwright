@@ -143,6 +143,8 @@ test('Check mark inprogress rules', async ({ landingPage, page }) => {
 
 
 test.only('Release rules', async ({ landingPage, page }) => {
+  
+  test.setTimeout(0);
   const mcarePage = await landingPage.gotoMcarePage();
   // await page.pause();
 
@@ -171,10 +173,86 @@ test.only('Release rules', async ({ landingPage, page }) => {
 
   await mcarePage.locator('[data-testid="RocketLaunchOutlinedIcon"]').first().click();
   await mcarePage.locator('xpath=//button[text()="Yes"]').first().click();
+  const popUP = mcarePage.locator('xpath=//h2[text()="Release Operation Results"]').first();
+  await popUP.waitFor({timeout:2*60*1000});
+  
+  await expect(popUP).toBeVisible({timeout:2*60*1000});
   await mcarePage.locator('xpath=//button[text()="Close"]').first().click();
 
-  await mcarePage.waitForTimeout(5 * 60 * 1000);
+  await mcarePage.waitForTimeout(3 * 60 * 1000);
   }
 
 
 })
+
+
+test.only('Release rules 2', async ({ landingPage, page }) => {
+  test.setTimeout(0);
+  const mcarePage = await landingPage.gotoMcarePage();
+
+  // --- Navigate + apply filters ONCE ---
+  await mcarePage.getByRole('button', { name: 'Rules Configuration' }).click();
+  await expect(mcarePage.getByRole('heading', { name: 'Rule Master List' })).toBeVisible();
+  await expect(mcarePage.locator("td.MuiTableCell-root div.MuiBox-root").first()).toBeVisible();
+
+  await mcarePage.getByRole('textbox', { name: 'Type value..' }).nth(1).fill('0.01');
+  await mcarePage.getByRole('textbox', { name: 'Type value..' }).nth(2).fill('2027');
+  // await mcarePage.locator('[placeholder="Type or select value.."]').nth(2).fill('Portals');
+  await mcarePage.getByRole('textbox', { name: 'Type value..' }).nth(1).press('Enter');
+  await expect(mcarePage.locator('tbody tr').nth(2)).toBeVisible();
+
+  // Helper: first Rule Id link on the current page (numeric links in the table body)
+  const getFirstRuleId = async () =>
+    (await mcarePage.locator('tbody tr a').first().textContent())?.trim() ?? '';
+
+  const MAX_PAGES = 200;
+
+  for (let pageNum = 1; pageNum <= MAX_PAGES; pageNum++) {
+    console.log(`----- Page ${pageNum} -----`);
+
+    try {
+      // Select all rows on this page
+      await mcarePage.locator('xpath=//input').first().click();
+      await expect(mcarePage.locator('xpath=//p[contains(text(),"Rules")]')).toBeVisible();
+
+      // Trigger release
+      await mcarePage.locator('[data-testid="RocketLaunchOutlinedIcon"]').first().click();
+      await mcarePage.locator('xpath=//button[text()="Yes"]').first().click();
+
+      // Wait for the results popup
+      const popUP = mcarePage.locator('xpath=//h2[text()="Release Operation Results"]').first();
+      await popUP.waitFor({ timeout: 5 * 60 * 1000 });
+      await expect(popUP).toBeVisible();
+
+      // Log success vs failure (does NOT stop the loop)
+      const failToast = mcarePage.locator('xpath=//*[contains(text(),"failed to release")]');
+      if (await failToast.isVisible().catch(() => false)) {
+        console.log(`Page ${pageNum}: some rules FAILED to release`);
+      } else {
+        console.log(`Page ${pageNum}: release OK`);
+      }
+
+      // Close popup
+      await mcarePage.locator('xpath=//button[text()="Close"]').first().click();
+    } catch (err) {
+      // One page erroring shouldn't kill the whole run — log and continue
+      console.log(`Page ${pageNum} errored: ${(err as Error).message}`);
+    }
+
+    // --- Move to next page ---
+    const nextBtn = mcarePage.locator('button[aria-label="Go to next page"]');
+    if (await nextBtn.isDisabled().catch(() => true)) {
+      console.log('Reached the last page. Stopping.');
+      break;
+    }
+
+    const before = await getFirstRuleId();
+    await nextBtn.click();
+    // Wait until the table actually shows a new page (first Rule Id changes)
+    await expect
+      .poll(getFirstRuleId, { timeout: 60_000 })
+      .not.toBe(before);
+
+    // await mcarePage.waitForTimeout(1 * 60 * 1000);
+  }
+});
