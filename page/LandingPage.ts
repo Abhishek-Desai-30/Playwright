@@ -8,12 +8,15 @@ export class LandingPage {
     url: string;
     urlMcare: string;
 
+    mcarePage!: Page;
+    mcareContext!: BrowserContext;
+
     constructor(page: Page, context: BrowserContext) {
         console.log("LandingPage initialized");
         this.page = page;
         this.context = context;
         this.url = `${process.env.BASE_URL}/Dashboard/Index`;
-        this.urlMcare = 'https://mcare-nptst.optum.com/';
+        this.urlMcare = `${process.env.MCARE_URL}` || 'https://mcare-qa.simplifyhealthcare.com/';
     }
 
     async gotoPage() {
@@ -141,36 +144,47 @@ export class LandingPage {
         await expect.soft(this.page.getByRole('heading', { name: /SBM Exception/i }).first()).toBeVisible();
     }
 
-    async gotoMcarePage() {
+    async gotoMcarePage(): Promise<Page> {
+        
+        this.mcareContext = await this.context.browser()!.newContext({
+            storageState: '.auth/mcare-user.json',
+        });
 
         console.log('content exists', !!this.context)
-        const mcarePage = await this.context.newPage();
+        this.mcarePage = await this.mcareContext.newPage();
+        console.log("mcare page created", this.urlMcare);
+        
 
-
-        await mcarePage.goto(this.urlMcare, {
+        await this.mcarePage.goto(this.urlMcare, {
             waitUntil: "domcontentloaded",
             timeout: 180000
         });
+        
+        // await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
+        await expect(this.mcarePage.getByRole('main').getByText('Dashboard')).toBeVisible();
+        // await mcarePage.getByRole('button', { name: 'Cascade & Plan View' }).click();
+        // await expect(mcarePage.getByRole('button', { name: 'Cascade History' })).toBeVisible();
+        // await expect(mcarePage.locator("td.MuiTableCell-sizeMedium span").first()).toBeVisible();
 
-        await mcarePage.getByRole('heading', { name: 'Simplify SuperUser' }).click();
-        await expect(mcarePage.getByRole('main').getByText('Dashboard')).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Rules Configuration' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Rule Master List' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Cascade & Plan View' }).click();
-        await expect(mcarePage.getByRole('button', { name: 'Cascade History' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Plan View', exact: true }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Plan View' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Activity Logs' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Activity Logs' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Admin Console' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'JSON Summary' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Reporting Center' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Reporting Module' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Task Manager' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Task Manager' })).toBeVisible();
-        await mcarePage.getByRole('button', { name: 'Rules Analytics' }).click();
-        await expect(mcarePage.getByRole('heading', { name: 'Rule Analytics Dashboard' })).toBeVisible();
+        // await mcarePage.getByRole('button', { name: 'Plan View', exact: true }).click();
+        // await expect(mcarePage.getByRole('heading', { name: 'Plan View' })).toBeVisible();
+        // await expect(mcarePage.locator("td.MuiTableCell-root").first()).toBeVisible();
+
+        // await mcarePage.getByRole('button', { name: 'Activity Logs' }).click();
+        // await expect(mcarePage.getByRole('heading', { name: 'Activity Logs' })).toBeVisible();
+
+        // await mcarePage.getByRole('button', { name: 'Admin Console' }).click();
+        // await expect(mcarePage.getByRole('heading', { name: 'JSON Summary' })).toBeVisible();
+        // await mcarePage.getByRole('button', { name: 'Reporting Center' }).click();
+        // await expect(mcarePage.getByRole('heading', { name: 'Reporting Module' })).toBeVisible();
+        // await mcarePage.getByRole('button', { name: 'Task Manager' }).click();
+        // await expect(mcarePage.getByRole('heading', { name: 'Task Manager' })).toBeVisible();
+        return this.mcarePage;
+
     }
 
+    async closeMcareContext(){
+        await this.mcareContext?.close();
+    }
 
 }

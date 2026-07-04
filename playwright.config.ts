@@ -32,7 +32,8 @@ console.log('playwright config file BASE_URL:', process.env.BASE_URL);
 export default defineConfig({
   timeout: 180000,
   expect: { timeout: 120000 },
-
+  
+  repeatEach: 10, //Repeat every test case 10 times
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -41,11 +42,11 @@ export default defineConfig({
   /* Retry on CI only */
   //retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   
-  retries: 2,
+  retries: 1,
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -72,7 +73,16 @@ export default defineConfig({
       use: {
         channel: 'msedge',
       },
-      testMatch: /.*\.setup\.ts/,
+      testMatch: '**/login\.setup\.ts',
+      timeout: 180000,
+    },
+
+    {
+      name: 'mcare-setup',
+      use: {
+        channel: 'msedge',
+      },
+      testMatch: '**/mcare-login\.setup\.ts',
       timeout: 180000,
     },
 
@@ -91,8 +101,36 @@ export default defineConfig({
         storageState: '.auth/user.json',
         baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
       },
-      dependencies: ['setup'],
+      dependencies: ['mcare-setup','setup'],
+      testMatch: '**/example.spec.ts',
       timeout: 180000,
     },
+
+    {
+      name: 'regress2',
+      use: {
+        channel: 'msedge',
+        headless: false,
+        viewport: null,
+        launchOptions:{
+              args: [
+                    '--start-maximized',
+                    '--disable-blink-features=AutomationControlled',
+                ],
+        },
+        storageState: '.auth/user.json',
+        baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
+      },
+      // dependencies: ['mcare-setup','setup'],
+      testMatch: '**/example.spec.ts',
+      timeout: 180000,
+    },
+
+    {
+  name: 'utility',
+  testMatch: '**/example.spec.ts',
+  timeout: 60000,
+  // no dependencies, no storageState, no baseURL — just pure Node
+},
   ],
 });

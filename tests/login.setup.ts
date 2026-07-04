@@ -14,7 +14,12 @@ setup('login setup', async ({ }) => {
             }
         );
 
-    const page = await context.pages()[0];
+    const pages = context.pages();
+    for (let i = 1; i < pages.length; i++) {
+        await pages[i].close();
+    }
+    const page = pages[0] || await context.newPage();
+
 
     await page.goto(
         '/'
@@ -37,8 +42,8 @@ setup('login setup', async ({ }) => {
     try {
         await selectRole.waitFor({ state: 'visible', timeout: 120000 })
         if (await selectRole.isVisible()) {
-        await page.locator('#roleChangeID').selectOption('24');
-        await page.getByRole('button', { name: 'Proceed' }).click();
+            await page.locator('#roleChangeID').selectOption('24');
+            await page.getByRole('button', { name: 'Proceed' }).click();
         }
 
     } catch (e) {
@@ -50,6 +55,6 @@ setup('login setup', async ({ }) => {
     await expect(workQueue).toBeVisible();
 
     await page.context().storageState({ path: '.auth/user.json' });
-    //await context.close();
+    await context.close();
 
 });
