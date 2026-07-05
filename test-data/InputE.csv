@@ -1,0 +1,500 @@
+effectiveStartDatePlanYear,networkType,ruleID,rowVersion,key
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[TemporaryBenefit3Package]!=
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[INIndicateDayIntervalsforInpatientHospitalAcute]>0|Medicare[INTier1IndicateDayIntervalsforInpatientHospitalAcute]>0)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]>0&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[InpatientHospitalPsychiatricInterval1INIndicateDayIntervalsforInpatientHospitalPsychiatric]>0|Medicare[InpatientHospitalPsychiatricInterval1INTier1IndicateDayIntervalsforInpatientHospitalPsychiatric]>0)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO&&Medicare[OONIndicateDayIntervalsforInpatientHospitalPsychiatric]>0&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=RFB PSO (State License)&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[MealsBenefitPackageVendor1]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&(Medicare[INAcupunctureMAX]!=|Medicare[INTier1AcupunctureMAX]!=)
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[IsthisanEmployerGroupPlan]!=YES&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,OON,29340,0.01,Medicare[DeductiblePackage]=DD059&&PBPView[EGWP]!=1&&Medicare[PlanName]!^Erickson&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,INN/OON,29340,0.01,Medicare[ReductionInCostSharingPackageID1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=Employer/Union Only Direct Contract PFFS
+1/1/2026,NA,29340,0.01,Medicare[AcupuncturePackage]^AC&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[AcupuncturePackage]^AC&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[AcupuncturePackage]^AC&Medicare[ProductFocus]!^Dental Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[HearingAidsPackageVendor1]=UnitedHealthcare Hearing&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[ChiropracticPackage]^CR&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[ChiropracticPackage]^CR&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[ChiropracticPackage]^CR&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[AdultDayHealthServicesPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[AdultDayHealthServicesPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[FitnessPackage]^FT&&Medicare[FitnessPackage]!=FT420&&Medicare[FitnessPackage]!=FT421&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[FitnessPackage]^FT&&Medicare[FitnessPackage]!=FT420&&Medicare[FitnessPackage]!=FT421&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[VisionPackage]^VS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[VisionPackage]^VS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[ProductFocus]!^Dental Only POS&Medicare[VisionPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[HealthEducationPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[HealthEducationPackage]^EF001&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[HealthEducationPackage]^EF&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,VBIDView[RespiteCareCSBPackage]^RV402|Medicare[SupportForCaregiversPackage]^CG008&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[DentalPackage]^DT&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackage]^DT&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[ContractNumber]=H5420006000|Medicare[ContractNumber]=h1045012000&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[ContractNumber]=H5420006000|Medicare[ContractNumber]=h1045012000&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMentalHealth]^MH&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMentalHealth]^MH&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMentalHealth]^MH&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,VBIDView[NonSkilledInHomeSupportServicesCSBPackage]=RV001|VBIDView[NonSkilledInHomeSupportServicesCSBPackage]=RV002&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,VBIDView[NonSkilledInHomeSupportServicesCSBPackage]^RV001|VBIDView[NonSkilledInHomeSupportServicesCSBPackage]^RV002&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,VBIDView[NonSkilledInHomeSupportServicesCSBPackage]^RV001&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,VBIDView[RespiteCareCSBPackage]^RV402|Medicare[SupportForCaregiversPackage]^CG008&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[TransportationPackageVendor1]=Saferide&&Medicare[PlanType]!=PFFS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[TransportationPackage]!=&Medicare[POSType]!=Dental Only POS&Medicare[POSType]!=Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[MealsBenefitPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[AlternativeTherapiesPackage]^NP&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[AlternativeTherapiesPackage]^NP002&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS&&Medicare[InHomeSupportServicesPackages]!=HS101&&Medicare[InHomeSupportServicesPackages]!=HS102&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS&&Medicare[InHomeSupportServicesPackages]!=HS101&&Medicare[InHomeSupportServicesPackages]!=HS102&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[DebitCardBenefitPackage]^CZ|Medicare[DebitCardBenefitPackage]^CA&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[VisionPackageVendor1]!^UnitedHealthcare&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[VisionPackageVendor1]!^UnitedHealthcare&&Medicare[VisionPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[POSType]!=Dental Only POS&&Medicare[VisionPackageVendor1]!^UnitedHealthcare&&&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[VisionPackageVendor1]^UnitedHealthcare&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[HearingExamPackageVendor1]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[HearingExamPackageVendor1]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[HearingExamPackageVendor1]!=&Medicare[POSType]!=Dental Only POS&Medicare[POSType]!=Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[PERSPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[PERSPackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[NursingHotlinePackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[NursingHotlinePackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[RoutineFootCarePackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[RoutineFootCarePackage]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[RoutineFootCarePackage]!=&Medicare[POSType]!^Dental Only POS&Medicare[POSType]!^Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[RemoteAccessTechnologiesWebPhoneBasedTechnologiesPackage]^VP&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[RemoteAccessTechnologiesWebPhoneBasedTechnologiesPackage]^VP&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[RemoteAccessTechnologiesWebPhoneBasedTechnologiesPackage]^VP&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMedical]^WT&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMedical]^WT&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[AdditionalTelehealthServicesPackageMedical]^WT&&Medicare[ProductFocus]!^Dental Only POS&&Medicare[ProductFocus]!^Rider Only POS&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,VBIDView[OtherPackage3]!=|Medicare[InHomeSupportServicesPackages]!=&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[InHomeSupportServicesPackages]^PV|VBIDView[OtherPackage3]^PV5&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&(Medicare[InHomeSupportServicesPackages]^PV002|Medicare[InHomeSupportServicesPackages]^PV004)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[AlternativeTherapiesPackage]^NP00&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,NA,29340,0.01,Medicare[TemporaryBenefit1Package]^NE&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[TemporaryBenefit1Package]^NE&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,Medicare[ContractNumber]=H0251002000
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=PFFS&&Medicare[POSType]!=Skinny POS&&Medicare[PlanType]!=Regional PPO&&(Medicare[PlanName]^Patriot|Medicare[PlanName]^CareFlex|Medicare[PlanName]^Access)
+1/1/2026,NA,29340,0.01,Medicare[PlanProductType]=Community - LIS|Medicare[PlanProductType]=Community - DSNP Look-alike
+1/1/2026,NA,29340,0.01,Medicare[SourceSystemPlanID]=&&Medicare[PlanName]^Essentials
+1/1/2026,NA,29340,0.01,Medicare[PlanName]^Extras&&Medicare[SourceSystemPlanID]=
+1/1/2026,NA,29340,0.01,Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&Medicare[PlanProductType]!=Chronic - LIS&&Medicare[PlanName]!^Erickson&&Medicare[PlanType]!=Regional PPO&&Medicare[PlanProductType]!=Chronic - DSNP Look-alike&&Medicare[SourceSystemPlanID]=
+1/1/2026,NA,29340,0.01,Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&Medicare[PlanProductType]!=Chronic - LIS&&Medicare[PlanName]!^Erickson&&Medicare[PlanType]!=Regional PPO&&Medicare[PlanProductType]=Chronic - DSNP Look-alike
+1/1/2026,NA,29340,0.01,Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&Medicare[PlanProductType]=Chronic - LIS&&Medicare[PlanName]!^Erickson&&Medicare[PlanType]!=Regional PPO&&Medicare[PlanProductType]!=Chronic - DSNP Look-alike
+1/1/2026,NA,29340,0.01,Medicare[IsthisaSpecialNeedsPlan]=NO&&Medicare[IsthisaProviderSpecificPlan]=Yes&&Medicare[PlanType]!=Regional PPO&&Medicare[SourceSystemPlanID]=
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=RFB PSO (State License)
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[TotalPremiumPartCpartD]>=$0.00&&PBPView[RxTypeOfDrugBenefit]=4&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[PlanName]!^Giveback&&Medicare[ContractNumber]!=H2001037000&&Medicare[ContractNumber]!=H2001038000
+1/1/2026,INN,29340,0.01,(Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[NationalNetwork]=No&&Medicare[State]!^CO&&Medicare[State]!^AZ&&Medicare[ContractNumber]!=H0543225000)|(Medicare[State]^AZ&&Medicare[NationalNetwork]=No&&Medicare[IsthisaSpecialNeedsPlan]=YES)|(Medicare[State]^CO&&Medicare[NationalNetwork]=No&&Medicare[IsthisaSpecialNeedsPlan]=YES)|(Medicare[State]^CO&&Medicare[IsthisaSpecialNeedsPlan]=NO&&Medicare[PlanName]^Rocky Mountain&&Medicare[NationalNetwork]=No)|(Medicare[State]^CO&&Medicare[State]^FL&&Medicare[NationalNetwork]=No)
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Regional PPO&Medicare[PlanType]!=Local PPO&Medicare[NationalNetwork]=Yes&PBPView[IsReferralRequiredIN]=2
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS&Medicare[State]^CA&Medicare[PlanType]=HMOPOS&Medicare[OONSpecialistOfficeVisitsMAX]!=&Medicare[OONSpecialistOfficeVisitsMAX]!=Not Applicable&Medicare[Status]!=Term&Medicare[Status]!=Cancelled
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[PlanType]^PPO
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[NationalNetwork]=Yes&&Medicare[ReferralPackage]^GK
+1/1/2026,INN,29340,0.01,(Medicare[PlanName]^ValueRx)|(Medicare[ProductFocus]^$0 Rx)|(Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]=25%)
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=PFFS&&Medicare[PlanType]!=HMO
+1/1/2026,INN,29340,0.01,(Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&PBPView[RxInsulinTier3StandardRetail1MonthSupply]=25)|(Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&PBPView[RxInsulinTier3StandardRetail1MonthSupply]=0)
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[FitnessPackageVendor1]!=&&Medicare[NumberofYearsFitnessBenefit]>=1
+1/1/2026,INN,29340,0.01,Medicare[RoutineFootCarePackage]^RF&&Medicare[SourceSystemPlanID]!^a&&Medicare[RoutinePodiatryServicesnumberofvisit]!=Unlimited
+1/1/2026,INN,29340,0.01,Medicare[DentalLevel]=L1&&Medicare[DentalPackageVendor1]=UnitedHealthcare Dental
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalLevel]=L1&&Medicare[DentalPackageVendor1]=UnitedHealthcare Dental
+1/1/2026,INN,29340,0.01,(Medicare[DentalPackageVendor1]!^Solstice&&Medicare[PlanType]!=PFFS&&Medicare[DentalPackageVendor1]!=&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%)|(Medicare[DentalPackageVendor1]!^Solstice&&Medicare[PlanType]!=PFFS&&Medicare[DentalPackageVendor1]!=&&Medicare[INTier1ProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%)
+1/1/2026,INN/OON,29340,0.01,(Medicare[DentalPackageVendor1]!^Solstice&&Medicare[PlanType]!=PFFS&&Medicare[DentalPackageVendor1]!=&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%)|(Medicare[DentalPackageVendor1]!^Solstice&&Medicare[PlanType]!=PFFS&&Medicare[DentalPackageVendor1]!=&&Medicare[INTier1ProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%)
+1/1/2026,INN,29340,0.01,Medicare[DentalPackage]=DT967|Medicare[DentalPackage]=DT968|Medicare[DentalPackage]=DT969|Medicare[DentalPackage]=DT748|Medicare[DentalPackage]=DT749
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackage]=DT967|Medicare[DentalPackage]=DT968|Medicare[DentalPackage]=DT969|Medicare[DentalPackage]=DT748|Medicare[DentalPackage]=DT749
+1/1/2026,INN,29340,0.01,Medicare[DentalPackageVendor1]^Solstice
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackageVendor1]^Solstice
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=Employer Direct PDP
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=PFFS&&Medicare[PlanType]!=HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[SourceSystemPlanID]=
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[PlanType]!=PFFS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[PlanType]!=RFB HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN,29340,0.01,Medicare[ContractNumber]=H0321004000&&Medicare[PlanType]!=MMP HMO
+1/1/2026,OON,29340,0.01,Medicare[ContractNumber]=H0321004000&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=Employer/Union Only Direct Contract PFFS
+1/1/2026,INN,29340,0.01,(Medicare[DentalPackage]!=DT311&&Medicare[DentalPackage]!=DT320&&Medicare[DentalPackage]!=DT967&&Medicare[DentalPackageVendor1]^United&&Medicare[PlanType]!=PFFS&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=$0.00&&Medicare[DentalPackage]!=DT748&&Medicare[DentalPackage]!=DT749&&Medicare[DentalPackage]!=DT968&&Medicare[DentalPackage]!=DT969)
+1/1/2026,INN/OON,29340,0.01,(Medicare[DentalPackage]!=DT311&&Medicare[DentalPackage]!=DT320&&Medicare[DentalPackage]!=DT967&&Medicare[DentalPackageVendor1]^United&&Medicare[PlanType]!=PFFS&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=$0.00&&Medicare[DentalPackage]!=DT748&&Medicare[DentalPackage]!=DT749&&Medicare[DentalPackage]!=DT968&&Medicare[DentalPackage]!=DT969)
+1/1/2026,INN,29340,0.01,Medicare[PlanType]=PFFS&&Medicare[DentalPackage]!=&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]=PFFS&&Medicare[DentalPackage]!=&&Medicare[INProsthodonticsOtherOralMaxillofacialSurgeryOtherServicesMAX]=50%
+1/1/2026,INN,29340,0.01,PBPView[OptionalPkgType]=Dental Platinum Rider|PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium2OptionalSupplementalPackageType]=Dental Platinum Rider
+1/1/2026,INN,29340,0.01,Medicare[HouseCalls]=Yes&&Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing&&PBPView[EGWP]!=1&&Medicare[INPCPOfficeVisitsMAX]=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]>$40.00&&Medicare[INSpecialistOfficeVisitsMAX]!=20%
+1/1/2026,INN,29340,0.01,(Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&PBPView[EGWP]!=1&&Medicare[SelectHearingAidsPackages]=&&Medicare[SelectHearingExamPackages]!=)
+1/1/2026,INN,29340,0.01,(Medicare[ProductFocus]^Standard Rebate&&Medicare[PlanType]!=PFFS&&Medicare[SpecialNeedsPlanType]!=Institutional)|(Medicare[ProductFocus]^TBC Rebate&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=PFFS&&Medicare[PremiumPartBGiveback]>=$20.00)
+1/1/2026,INN,29340,0.01,(Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[RewardsEligible]=Eligible&&Medicare[IsthisaSpecialNeedsPlan]=NO&&Medicare[CatalogBenefitPackage]=&&Medicare[DebitCardBenefitPackage]=)
+1/1/2026,INN,29340,0.01,(Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[INPCPOfficeVisitsMAX]=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]=$0.00&&Medicare[INIndicateCostSharePerStay]=$0.00&&Medicare[INIndicateDayIntervalsforInpatientHospitalAcute]=0)|(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing)
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackage]!=&&Medicare[SourceSystemPlanID]!^a&&Medicare[TransportationPackage]!=TX251
+1/1/2026,INN,29340,0.01,(Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[MaximumOutofPocketInNetwork]!=&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[PlanProductType]!^DSNP Look-alike&&Medicare[DSNPTypeDescription]!^Medicare Zero)|(Medicare[PlanType]=PFFS)
+1/1/2026,INN,29340,0.01,(Medicare[HearingAidsPackageVendor1]!=&&Medicare[SelectHearingAidsPackages]!=HA242&&Medicare[SelectHearingAidsPackages]!=HA243&&Medicare[SelectHearingAidsPackages]!=HA252&&Medicare[SelectHearingAidsPackages]!=HA253&&Medicare[SelectHearingAidsPackages]!=HA254&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&PBPView[EGWP]!=1)
+1/1/2026,INN,29340,0.01,Medicare[SelectHearingAidsPackages]=HA252
+1/1/2026,INN,29340,0.01,(Medicare[SelectHearingAidsPackages]=HA242|Medicare[SelectHearingAidsPackages]=HA243)
+1/1/2026,INN,29340,0.01,(VBIDView[FoodandProducePackage]^FP|VBIDView[FoodandProducePackage]^FI)
+1/1/2026,INN,29340,0.01,Medicare[DebitCardBenefitPackage]^CA|Medicare[DebitCardBenefitPackage]^CZ
+1/1/2026,INN,29340,0.01,(Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]=&&Medicare[VisionPackage]!=)&&(Medicare[INTier1IndicateCombinedMaximumPlanBenefitCoverageamountEyewear]=&&Medicare[VisionPackage]!=)
+1/1/2026,INN,29340,0.01,(PBPView[EGWP]!=1&&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=Not Applicable&&Medicare[VisionPackageVendor1]!=UnitedHealthcare Vision&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS)|(Medicare[VisionPackageVendor1]!=&&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]=Not Applicable&&Medicare[State]^OH)
+1/1/2026,INN,29340,0.01,(PBPView[EGWP]!=1&&Medicare[INTier1IndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[VisionPackageVendor1]=UnitedHealthcare Vision&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS)&&(Medicare[ContractNumber]!=H2226001000&&Medicare[ContractNumber]!=H2226003000&&Medicare[ContractNumber]!=H0251002000&&Medicare[ContractNumber]!=H0251004000&&Medicare[ContractNumber]!=H2406053000&&Medicare[ContractNumber]!=H2406099000&&Medicare[ContractNumber]!=H7464010000&&Medicare[ContractNumber]!=H3113005000&&Medicare[ContractNumber]!=H0845001000&&Medicare[ContractNumber]!=H7778001000)
+1/1/2026,INN,29340,0.01,Medicare[PlanName]^Access
+1/1/2026,INN,29340,0.01,Medicare[PlanName]^CareFlex&&PBPView[EGWP]!=1
+1/1/2026,INN,29340,0.01,(Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing&&PBPView[EGWP]!=1&&Medicare[INPCPOfficeVisitsMAX]=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]<=$40.00&&Medicare[INInpatientHospitalAcuteInterval1]!=$0.00&&Medicare[INInpatientHospitalAcuteInterval1]!=&&PBPView[SpecialNeedsInstitutionalType]!=1&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility) and Institutional Equivalent (Living in the Community))|(Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing&&PBPView[EGWP]!=1&&Medicare[INPCPOfficeVisitsMAX]=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]<=$40.00&&Medicare[INIndicateCostSharePerStay]>$0.00&&Medicare[INInpatientHospitalAcuteInterval1]=&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility)&&Medicare[SpecialNeedsInstitutionalType]!=Institutional (Facility) and Institutional Equivalent (Living in the Community))|(Medicare[INIndicateCostSharePerStay]=$0.00&&Medicare[INInpatientHospitalAcuteInterval1]=&&Medicare[INPCPOfficeVisitsMAX]=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]!=$0.00&&Medicare[INSpecialistOfficeVisitsMAX]<=$40.00)
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[StateLevelDelegation]^Full
+1/1/2026,NA,29340,0.01,Medicare[AuthorizationPackage]!=&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[PlanType]!=PFFS
+1/1/2026,INN/OON,29340,0.01,Medicare[AuthorizationPackage]!=&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[PlanType]!=PFFS
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,(PBPView[EGWP]!=1&&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[VisionPackageVendor1]=UnitedHealthcare Vision&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS)
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[INNursingHotlineMAX]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=RFB HMO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=PFFS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,OON,29340,0.01,Medicare[DeductiblePackage]=&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=RFB Local PPO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,OON,29340,0.01,Medicare[DeductiblePackage]=DD059&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[Tiers]^IN&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[ContractNumber]!=H2226001000&&Medicare[ContractNumber]!=H2226003000&&Medicare[ContractNumber]!=H2406053000&&Medicare[ContractNumber]!=H7464010000&&Medicare[ContractNumber]!=H3113005000&&Medicare[ContractNumber]!=H2406051000&&Medicare[ContractNumber]!=H2406132000
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[ContractNumber]!=H2406053000&&Medicare[ContractNumber]!=H2406051000&&Medicare[ContractNumber]!=H2406132000
+1/1/2026,NA,29340,0.01,(PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan)
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[VisionPackageVendor1]!=FFS&&Medicare[VisionPackageVendor1]!=UnitedHealthcare Vision&&Medicare[VisionPackage]!=&&Medicare[PlanType]!=MMP HMO&&Medicare[VisionPackage]!=VS457&&Medicare[VisionPackage]!=VS458
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[VisionPackageVendor1]!=FFS&&Medicare[VisionPackageVendor1]!=UnitedHealthcare Vision&&Medicare[VisionPackage]!=&&Medicare[VisionPackage]!=VS457&&Medicare[VisionPackage]!=VS458&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN/OON,29340,0.01,Medicare[SourceSystemPlanID]=&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[VisionPackage]=VS457|Medicare[VisionPackage]=VS458
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=RFB PSO (State License)
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=Fallback
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=HCPP - 1833 Cost
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[SelectEnhancedBenefitsforPodiatryservices]=Routine Foot Care&Medicare[PlanType]!=MMP HMO
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[SelectEnhancedBenefitsforPodiatryservices]=Routine Foot Care&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS|Medicare[ContractNumber]=H0543225000
+1/1/2026,OON,29340,0.01,Medicare[SelectHearingExamPackages]^HX&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS|Medicare[ContractNumber]=H6824001000|Medicare[ContractNumber]=H6824002000
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[ChiropracticPackage]^CR&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[ChiropracticPackage]^CR&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS|Medicare[ContractNumber]=H0543225000
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[AcupuncturePackageVendor1]!=
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AcupuncturePackageVendor1]!=&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[MealsBenefitPackage]^MB&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[PlanType]!=RFB HMOPOS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ReductionInCostSharingMaxPlanBenefitAmount1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[RewardsPotential]!=
+1/1/2026,INN,29340,0.01,Medicare[DeductiblePackage]=DD054|Medicare[DeductiblePackage]=DD061|Medicare[DeductiblePackage]^DD065
+1/1/2026,INN,29340,0.01,Medicare[DeductiblePackage]=DD059
+1/1/2026,OON,29340,0.01,(Medicare[DeductiblePackage]=DD054|Medicare[DeductiblePackage]=DD061|Medicare[DeductiblePackage]=DD056)&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN/OON,29340,0.01,Medicare[DeductiblePackage]=&PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,Medicare[ContractNumber]!=H2001050000&&Medicare[PlanType]!=MMP HMO&&(Medicare[DeductiblePackage]=DD064|Medicare[DeductiblePackage]=DD063|Medicare[DeductiblePackage]=DD062|Medicare[DeductiblePackage]^DD066)&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,Medicare[PremiumPartBGiveback]!=Not Covered&&Medicare[PremiumPartBGiveback]!=$0.00&&Medicare[PremiumPartBGiveback]!=Not Applicable&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&(Medicare[ProductFocus]^standard rebate|Medicare[ProductFocus]^TBC rebate)
+1/1/2026,INN/OON,29340,0.01,Medicare[PremiumPartBGiveback]!=Not Covered&&Medicare[PremiumPartBGiveback]!=$0.00&&Medicare[PremiumPartBGiveback]!=Not Applicable&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&(Medicare[ProductFocus]^standard rebate|Medicare[ProductFocus]^TBC rebate)
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS&Medicare[PlanType]!=RFB PSO (State License)
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[POSType]!=Dental Only POS&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&(Medicare[DebitCardBenefitPackage]^CZ|Medicare[DebitCardBenefitPackage]^CA)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[DebitCardBenefitPackage]^CA|Medicare[DebitCardBenefitPackage]^CZ)&&Medicare[PlanType]!=RFB Local PPO
+1/1/2026,INN/OON,29340,0.01,Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FI&&PBPView[EGWP]!=1
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[DebitCardBenefitPackage]^FS&&Medicare[PlanType]!=MMP HMO|Medicare[DebitCardBenefitPackage]^FO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[IsthisaSpecialNeedsPlan]=YES&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[SourceSystemPlanID]!^a&&Medicare[AcupuncturePackage]!=
+1/1/2026,INN,29340,0.01,Medicare[PlanName]^AARP Medicare Rx Preferred from UHC&&Medicare[ContractNumber]!=S5820034000&&Medicare[ContractNumber]!=S5820035000&&Medicare[ContractNumber]!=S5820036000&&Medicare[ContractNumber]!=S5820037000&&Medicare[ContractNumber]!=S5820038000&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=MMP HMO&&(Medicare[ContractNumber]=S5820034000|Medicare[ContractNumber]=S5820035000|Medicare[ContractNumber]=S5820036000|Medicare[ContractNumber]=S5820037000|Medicare[ContractNumber]=S5820038000)
+1/1/2026,INN,29340,0.01,Medicare[PlanName]=AARP Medicare Rx Saver from UHC (PDP)&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN,29340,0.01,Medicare[PlanName]=AARP Medicare Rx Preferred from UHC (PDP)&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN,29340,0.01,Medicare[PlanName]=AARP Medicare Rx Saver from UHC (PDP)&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,Medicare[PlanName]=AARP Medicare Rx Preferred from UHC (PDP)&&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[INIndicateDayIntervalsforInpatientHospitalAcute]=0&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[INDoyouchargetheMedicaredefinedCostShareTiers]=NO|Medicare[INTier1DoyouchargetheMedicaredefinedCostShareTiers]=NO)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&PBPView[RxTypeOfDrugBenefit]=1
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!^25%&&Medicare[PlanType]!=RFB PSO (State License)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=NO&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN,29340,0.01,(Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[DebitCardBenefitPackage]^FS)|(Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[DebitCardBenefitPackage]^FO)
+1/1/2026,INN,29340,0.01,(Medicare[SelectHearingAidsPackages]=HA253|Medicare[SelectHearingAidsPackages]=HA254)
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[INIndicateDayIntervalsforInpatientHospitalPsychiatric]=0&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1StandardMailOrderPharmacy3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[Tier1StandardMailOrderPharmacy3MInitialCoverageLimit]=&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[EGWP]!=1
+1/1/2026,INN/OON,29340,0.01,PBPView[RxInsulinTier3StandardRetail1MonthSupply]=25
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&(Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]=0|Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]=)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&(Medicare[OONIndicateDayIntervalsforInpatientHospitalPsychiatric]=0|Medicare[OONIndicateDayIntervalsforInpatientHospitalPsychiatric]=)&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PremiumPartBGiveback]>$0.00
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PremiumPartBGiveback]>$0.00
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ReductionInCostSharingPackageID1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ReductionInCostSharingPackageID1]!=
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing|Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike)&&Medicare[ProductFocus]!^QMB Only
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing|Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike)&&Medicare[ProductFocus]!^QMB Only
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ProductFocus]!^QMB Only&&(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing|Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike)&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[INIndicateDayIntervalsforInpatientHospitalAcute]=0
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]>0
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[AdditionalTelehealthServicesPackageMedical]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[AdditionalTelehealthServicesPackageMedical]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[INIndicateDayIntervalsforInpatientHospitalAcute]>0|Medicare[INTier1IndicateDayIntervalsforInpatientHospitalAcute]>0)
+1/1/2026,INN/OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[AdditionalTelehealthServicesPackageMentalHealth]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[AdditionalTelehealthServicesPackageMentalHealth]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[SelectHearingAidsPackages]!=
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[HearingExamPackageVendor1]!=
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[HearingExamPackageVendor1]!=
+1/1/2026,NA,29340,0.01,Medicare[DentalPackageVendor1]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackageVendor1]!=&&(Medicare[SpecialNeedsPlanType]!=Dual-Eligible|(Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[State]!=AZ&&Medicare[State]!=NY&&Medicare[State]!=PA))
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackageVendor1]!=&(Medicare[SpecialNeedsPlanType]=Dual-Eligible&(Medicare[State]=AZ|Medicare[State]=NY|Medicare[State]=PA))
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[VisionPackage]^VS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[VisionPackage]^VS
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[VisionPackage]^VS&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,Medicare[VisionPackage]!=&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=
+1/1/2026,OON,29340,0.01,Medicare[VisionPackageVendor1]!^UnitedHealthcare Vision&Medicare[VisionPackageVendor1]!=&Medicare[OONIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[VisionPackageVendor1]^UnitedHealthcare Vision&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackageVendor1]^Modivcare
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackageVendor1]!^Modivcare&Medicare[TransportationPackage]!=&Medicare[TransportationPackageVendor1]!^SafeRide
+1/1/2026,OON,29340,0.01,Medicare[TransportationPackage]!=&Medicare[POSType]!=Dental Only POS&Medicare[POSType]!=Rider Only POS
+1/1/2026,NA,29340,0.01,Medicare[AcupuncturePackage]^AC
+1/1/2026,INN,29340,0.01,Medicare[AcupuncturePackage]^AC
+1/1/2026,OON,29340,0.01,Medicare[AcupuncturePackage]^AC
+1/1/2026,NA,29340,0.01,Medicare[AdultDayHealthServicesPackage]^DC
+1/1/2026,INN/OON,29340,0.01,Medicare[AdultDayHealthServicesPackage]^DC
+1/1/2026,NA,29340,0.01,Medicare[HealthEducationPackage]!=
+1/1/2026,INN,29340,0.01,Medicare[HealthEducationPackage]!=
+1/1/2026,OON,29340,0.01,Medicare[HealthEducationPackage]!=
+1/1/2026,NA,29340,0.01,Medicare[RoutineFootCarePackage]^RF
+1/1/2026,INN,29340,0.01,Medicare[RoutineFootCarePackage]^RF
+1/1/2026,OON,29340,0.01,Medicare[RoutineFootCarePackage]^RF&&Medicare[POSType]!^Dental Only POS&&Medicare[POSType]!^Rider Only POS
+1/1/2026,NA,29340,0.01,Medicare[MealsBenefitPackage]^MB
+1/1/2026,INN/OON,29340,0.01,Medicare[MealsBenefitPackage]!=
+1/1/2026,NA,29340,0.01,Medicare[NursingHotlinePackage]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[NursingHotlinePackage]^NH
+1/1/2026,NA,29340,0.01,Medicare[PERSPackage]^PE
+1/1/2026,INN/OON,29340,0.01,Medicare[PERSPackage]^PE
+1/1/2026,NA,29340,0.01,VBIDView[RespiteCareCSBPackage]^RV402|Medicare[SupportForCaregiversPackage]^CG008
+1/1/2026,INN,29340,0.01,VBIDView[RespiteCareCSBPackage]^RV402|Medicare[SupportForCaregiversPackage]^CG008
+1/1/2026,NA,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS&&Medicare[InHomeSupportServicesPackages]!=HS101&&Medicare[InHomeSupportServicesPackages]!=HS102
+1/1/2026,INN,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PassportPackage]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PassportPackage]!=
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO&&Medicare[ChiropracticPackage]^CR
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=PFFS&&Medicare[POSType]!=Skinny POS&&Medicare[PlanType]!=Regional PPO&&Medicare[PremiumPartBGiveback]>$0&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^TBC Rebate&&Medicare[PlanName]!^Group
+1/1/2026,INN,29340,0.01,Medicare[OptumatHome]=Yes&&Medicare[SpecialNeedsPlanType]=Dual-Eligible
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&PBPView[RxTypeOfDrugBenefit]=1
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&PBPView[RxTypeOfDrugBenefit]=1
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2StandardMailOrderPharmacy3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=NO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]=Medicare Prescription Drug Plan&&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]!^25
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=MMP HMO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SelectcomponentsofNetwork]^Standard/Preferred Retail Cost-Sharing&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN,29340,0.01,(Medicare[IsthisaSpecialNeedsPlan]!=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]=$0.00&&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]=$0.00)|(Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]=$0.00&&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]=$0.00)
+1/1/2026,INN,29340,0.01,Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]=$0.00&&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]!=$0.00&&Medicare[ProductFocus]!^$0 Rx&&Medicare[PlanName]!=ValueRx
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3StandardMailOrderPharmacy3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxInsulinTier3StandardMailOrder3MonthSupply]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[ProductFocus]^$0 Rx|Medicare[DSNPSubType]^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]=Medicare Prescription Drug Plan&&Medicare[Tier3StandardRetailPharmacy1M]!^25
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN/OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ReductionInCostSharingPackageID1]^RC&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&(Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]=0|Medicare[OONIndicateDayIntervalsforInpatientHospitalAcute]=)
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled
+1/1/2026,INN,29340,0.01,Medicare[PlanType]!=Medicare Prescription Drug Plan&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[MaximumOutofPocketInNetwork]!=
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS&Medicare[Status]!=Term&Medicare[Status]!=Cancelled
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier3StandardRetailPharmacy1M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier4StandardRetailPharmacy1M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier5StandardRetailPharmacy1M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier1PreferredRetailNetwork1MInitialCoverageLimit]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier2PreferredRetailNetwork1MInitialCoverageLimit]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier3PreferredRetailNetwork1MInitialCoverageLimit]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier4PreferredRetailNetwork1M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier5PreferredRetailNetwork1M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier1PreferredMailOrderNetwork3M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier2PreferredMailOrderNetwork3M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Tier3PreferredMailOrderNetwork3M]!=&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[Status]!=Term&Medicare[Status]!=Cancelled
+1/1/2026,INN/OON,29340,0.01,Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[ProductFocus]!^LIS Buydown&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!^25%&&Medicare[Status]!=Term&&Medicare[Status]!=Cancelled&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[DeductibleTiers]!^1&&Medicare[DeductibleTiers]!^2&&Medicare[DeductibleTiers]!^3&&Medicare[DeductibleTiers]^4&&Medicare[DeductibleTiers]^5
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[Deductible]=$0.00
+1/1/2026,INN/OON,29340,0.01,Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Status]!=Term&&Medicare[Status]!=Cancelled&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[Deductible]=$615.00
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&PBPView[EGWP]!=1&Medicare[PlanType]!=MMP HMO&Medicare[Status]!=Term&Medicare[Status]!=Cancelled&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[DeductibleTiers]!^1&Medicare[DeductibleTiers]!^2&Medicare[DeductibleTiers]^3&Medicare[DeductibleTiers]^4&Medicare[DeductibleTiers]^&&
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Tier1StandardMailOrderPharmacy3MInitialCoverageLimit]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Tier2StandardMailOrderPharmacy3MInitialCoverageLimit]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Tier3StandardMailOrderPharmacy3M]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Tier4StandardMailOrderPharmacy3M]>=$0.00&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[Tier5StandardMailOrderPharmacy3M]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN,29340,0.01,Medicare[NationalNetwork]=No&&Medicare[ReferralPackage]^GK&&Medicare[ContractNumber]!=H0543225000
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]=Medicare Prescription Drug Plan&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[PlanType]=Medicare Prescription Drug Plan&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1PreferredMailOrderNetwork3M]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]=Medicare Prescription Drug Plan&&Medicare[Tier4StandardRetailPharmacy1M]!^25
+1/1/2026,NA,29340,0.01,Medicare[ChiropracticPackage]^CR
+1/1/2026,INN,29340,0.01,Medicare[ChiropracticPackage]^CR
+1/1/2026,OON,29340,0.01,Medicare[ChiropracticPackage]^CR&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=Medicare Prescription Drug Plan
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[VisionPackageVendor1]!=&&Medicare[VisionPackageVendor1]!=FFS&&Medicare[VisionPackage]!=VS235&&Medicare[VisionPackage]!=VS241&&Medicare[VisionPackage]!=VS259&&Medicare[VisionPackage]!=VS265&&Medicare[VisionPackage]!=VS277
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing)
+1/1/2026,OON,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[PlanType]!=HMO&&(Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[PlanProductType]^Chronic - DSNP Look-alike|Medicare[PlanProductType]^Community - DSNP Look-alike|Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Non-Zero Cost-Sharing)
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[OONHearingAidAllTypesMAX]!=|Medicare[OONOralExamsMAX]!=|Medicare[OONGlassesLensesonlyMAX]!=|Medicare[OONGlassesLensesandFramesMAX]!=|Medicare[OONRoutineHearingExamsMAX]!=|Medicare[OONRoutineEyeExamMax]!=|Medicare[OONAnnualPhysicalMAX]!=|Medicare[OONMedicallyNecessaryTransportationMAX]!=|Medicare[OONRoutinePodiatryServicesMAX]!=|Medicare[OONRoutineChiropracticServicesMAX]!=)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ProductFocus]^Discounts
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[ProductFocus]^Discounts
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PremiumPartBGiveback]>$0.00&&Medicare[ProductFocus]!^Rebid Rebate&&Medicare[ProductFocus]!^TBC Rebate
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PremiumPartBGiveback]>$0.00&&Medicare[ProductFocus]!^Rebid Rebate&&Medicare[ProductFocus]!^TBC Rebate
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing|(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing&&(Medicare[PlanType]!=HMO&&Medicare[POSType]!=Dental Only POS)))
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&(Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing|(Medicare[DSNPTypeDescription]=Dual Eligible Subset - Medicare Zero Cost-sharing&&(Medicare[PlanType]!=HMO&&Medicare[POSType]!=Dental Only POS)))
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[DSNPTypeDescription]!=Dual Eligible Subset - Medicare Zero Cost-sharing
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=
+1/1/2026,NA,29340,0.01,Medicare[FitnessPackage]!=
+1/1/2026,INN/OON,29340,0.01,Medicare[FitnessPackage]!=
+1/1/2026,NA,29340,0.01,Medicare[DebitCardBenefitPackage]^CA|Medicare[DebitCardBenefitPackage]^CZ
+1/1/2026,NA,29340,0.01,Medicare[DebitCardBenefitPackage]!=&&(Medicare[DebitCardBenefitPackage]^FS|Medicare[DebitCardBenefitPackage]^FO|Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FI)
+1/1/2026,INN/OON,29340,0.01,Medicare[DebitCardBenefitPackage]^CZ|Medicare[DebitCardBenefitPackage]^CA
+1/1/2026,INN/OON,29340,0.01,Medicare[DebitCardBenefitPackage]^FS|Medicare[DebitCardBenefitPackage]^FO|Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FI
+1/1/2026,NA,29340,0.01,Medicare[VisionPackage]!=&&(Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=|Medicare[INTier1IndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=)
+1/1/2026,OON,29340,0.01,Medicare[VisionPackageVendor1]!^UnitedHealthcare&&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN/OON,29340,0.01,Medicare[VisionPackageVendor1]^UnitedHealthcare&&(Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=|Medicare[INTier1IndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=)
+1/1/2026,INN,29340,0.01,Medicare[VisionPackageVendor1]!^UnitedHealthcare&Medicare[INIndicateCombinedMaximumPlanBenefitCoverageamountEyewear]!=
+1/1/2026,NA,29340,0.01,Medicare[HearingAidsPackageVendor1]!=
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&Medicare[HearingAidsPackageVendor1]!=UnitedHealthcare Hearing&Medicare[HearingAidsPackageVendor1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[HearingAidsPackageVendor1]^UnitedHealthcare Hearing
+1/1/2026,NA,29340,0.01,Medicare[TransportationPackage]!=
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackageVendor1]^SafeRide&&Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,Medicare[DebitCardBenefitPackage]^CZ|Medicare[DebitCardBenefitPackage]^CA
+1/1/2026,NA,29340,0.01,Medicare[DebitCardBenefitPackage]^FS|Medicare[DebitCardBenefitPackage]^FO|Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FI
+1/1/2026,INN/OON,29340,0.01,Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FS|Medicare[DebitCardBenefitPackage]^FO|Medicare[DebitCardBenefitPackage]^FI
+1/1/2026,NA,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS&&Medicare[InHomeSupportServicesPackages]!=HS101&&Medicare[InHomeSupportServicesPackages]!=HS102&&Medicare[IsthisanEmployerGroupPlan]=NO
+1/1/2026,INN,29340,0.01,Medicare[InHomeSupportServicesPackages]^HS&&Medicare[InHomeSupportServicesPackages]!=HS101&&Medicare[InHomeSupportServicesPackages]!=HS102&&Medicare[IsthisanEmployerGroupPlan]=NO
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[PlanType]!=MMP HMO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]=1&&PBPView[RxComponentsOfNetwork]^001000
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[RxComponentsOfNetwork]^001000&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SelectcomponentsofNetwork]^Standard/Preferred Retail Cost-Sharing&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[Tier1PreferredMailOrderNetwork3M]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[Tier2PreferredMailOrderNetwork3M]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[Tier3PreferredMailOrderNetwork3M]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[Tier4PreferredMailOrderNetwork3M]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&Medicare[Tier5PreferredMailOrderNetwork3M]!=
+1/1/2026,NA,29340,0.01,Medicare[IsthisanEmployerGroupPlan]=NO&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[SpecialNeedsPlanType]!=Dual-Eligible&&PBPView[RxInsulinTier3PreferredMailOrder3MonthSupply]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional
+1/1/2026,NA,29340,0.01,Medicare[FeaturedYN]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&(Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC)
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMOPOS&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS&&Medicare[ContractNumber]!=H2406053000&&Medicare[ContractNumber]!=H2406051000&&Medicare[ContractNumber]!=H2406132000
+1/1/2026,INN,29340,0.01,(Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]>$0.00&&Medicare[ProductFocus]!^$0 Rx&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Value&&Medicare[ContractNumber]!=H0251004000&&Medicare[ContractNumber]!=H0321004000&&Medicare[ContractNumber]!=H7464010000)|(Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[Tier1PreferredRetailNetwork1MInitialCoverageLimit]>$0.00&&Medicare[ProductFocus]!^$0 Rx&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Value&&Medicare[ContractNumber]!=H0251004000&&Medicare[ContractNumber]!=H0321004000&&Medicare[ContractNumber]!=H7464010000)
+1/1/2026,INN,29340,0.01,Medicare[ProductFocus]^$0 Rx|Medicare[DSNPSubType]^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[ProductFocus]^Full Dual Focus
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[ProductFocus]^Full + QMB Focus
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[ProductFocus]^Non-QMB Partial Only
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[ProductFocus]^Non-QMB Partial Focus
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[SpecialNeedsPlanType]=Chronic or Disabling Condition&&Medicare[PlanProductType]!=Chronic - DSNP Look-alike&&Medicare[PlanProductType]!=Chronic - LIS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[PlanProductType]=Chronic - DSNP Look-alike
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[PlanProductType]=Chronic - LIS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[SpecialNeedsPlanType]=Institutional&&Medicare[PlanProductType]!=Institutional - IESNP
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[AIP]!=Yes&&Medicare[PlanProductType]=Institutional - IESNP
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=1
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1PreferredMailOrderNetwork3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier5StandardRetailPharmacy1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1PreferredRetailNetwork1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier5PreferredRetailNetwork1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2PreferredMailOrderNetwork3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2StandardRetailPharmacy1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[Tier1PreferredMailOrderNetwork3M]!=&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2PreferredRetailNetwork1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[Tier1PreferredRetailNetwork3MInitialCoverageLimit]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[RxInsulinTier3PreferredRetail3MonthSupply]!=&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[RxInsulinTier3PreferredRetail3MonthSupply]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[RxInsulinTier3StandardRetail3MonthSupply]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier4PreferredRetailNetwork1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier4StandardRetailPharmacy1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3StandardRetailPharmacy3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3PreferredRetailNetwork3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2StandardRetailPharmacy3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3PreferredMailOrderNetwork3M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3StandardRetailPharmacy1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&PBPView[EGWP]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier3PreferredRetailNetwork1MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1PreferredRetailNetwork3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier2PreferredRetailNetwork3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier1StandardRetailPharmacy3MInitialCoverageLimit]!=&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[Tier3PreferredRetailNetwork1MInitialCoverageLimit]!=&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC&&Medicare[Tier1PreferredMailOrderNetwork3M]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[Tier1PreferredRetailNetwork1MInitialCoverageLimit]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[Tier4PreferredRetailNetwork1M]!=&&PBPView[RxTypeOfDrugBenefit]!=1
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,Medicare[ProductFocus]^$0 Rx|Medicare[DSNPSubType]^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=MMP HMO
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[PlanType]!=MMP HMO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=4&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC&&Medicare[SpecialNeedsPlanType]=Dual-Eligible
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[Tier1PreferredMailOrderNetwork3M]!=&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,Medicare[DebitCardBenefitPackage]^FS&&Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1|Medicare[DebitCardBenefitPackage]^FO
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[PlanType]!=RFB PSO (State License)&&(Medicare[DebitCardBenefitPackage]^FP|Medicare[DebitCardBenefitPackage]^FI)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[PlanType]!=Medicare Prescription Drug Plan&Medicare[PlanType]!=MMP HMO&(Medicare[DebitCardBenefitPackage]^CA|Medicare[DebitCardBenefitPackage]^CZ)
+1/1/2026,INN,29340,0.01,Medicare[TransportationPackageVendor1]!=&&PBPView[EGWP]!=1
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[TransportationPackage]!=&&Medicare[POSType]!=Dental Only POS&&Medicare[POSType]!=Rider Only POS
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&Medicare[MealsBenefitPackage]^MB&Medicare[PlanType]!=MMP HMO&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[Tier1PreferredRetailNetwork1MInitialCoverageLimit]!=&&Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[ReductionInCostSharingMaxPlanBenefitAmount1]!=
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1
+1/1/2026,INN/OON,29340,0.01,Medicare[DoesyourPlanofferaPrescriptionPartDbenefit]=YES&&PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]!=1&&Medicare[DSNPSubType]!^LTC&&Medicare[ProductFocus]!^$0 Rx
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[POSServiceArea]=2&&Medicare[IsthisanEmployerGroupPlan]!=YES
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[INMaximumPlanbenefitcoverageamountPreventive]!=|(Medicare[DentalPackage]=DT748|Medicare[DentalPackage]=DT967|Medicare[DentalPackage]=DT968|Medicare[DentalPackage]=DT969)
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[DentalPackage]!=
+1/1/2026,INN/OON,29340,0.01,(Medicare[ContractNumber]=H2406053000|Medicare[ContractNumber]=H7464010000|Medicare[ContractNumber]=H3113005000|Medicare[ContractNumber]=H1889034000|Medicare[ContractNumber]=H2001075000|Medicare[ContractNumber]=H2247004000|Medicare[ContractNumber]=H2247005000|Medicare[ContractNumber]=H2001066000|Medicare[ContractNumber]=H7464008001|Medicare[ContractNumber]=H7464008002|Medicare[ContractNumber]=H4610001000|Medicare[ContractNumber]=H4610002000)
+1/1/2026,INN/OON,29340,0.01,Medicare[DentalPackage]!=&&PBPView[EGWP]!=1&&Medicare[DentalPackage]!=DT311&&Medicare[DentalPackage]!=DT320&&Medicare[DentalPackage]!^DT40
+1/1/2026,INN/OON,29340,0.01,PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackageDescription]^Dental&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&PBPView[EGWP]!=1&&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,PBPView[OptionalSupplementalBenefitPackagesOptionalSupplementalLabelandPremium1OptionalSupplementalPackage1]!=&&PBPView[EGWP]!=1
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[DentalPackage]=|Medicare[DentalPackage]=DT311|Medicare[DentalPackage]=DT320|Medicare[DentalPackage]^DT40
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[DentalPackage]=|Medicare[DentalPackage]=DT311|Medicare[DentalPackage]=DT320|Medicare[DentalPackage]^DT40
+1/1/2026,NA,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[DentalPackage]!=&&Medicare[DentalPackage]!=DT311&&Medicare[DentalPackage]!=DT320&&Medicare[DentalPackage]!^DT40
+1/1/2026,INN/OON,29340,0.01,Medicare[PlanType]!=MMP HMO&&PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[DentalPackage]!=&&Medicare[DentalPackage]!=DT311&&Medicare[DentalPackage]!=DT320&&Medicare[DentalPackage]!^DT40
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanName]!^Erickson&&Medicare[SpecialNeedsPlanType]!=Institutional&&Medicare[INRoutineChiropracticServicesMAX]!=
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=MMP HMO&&Medicare[PlanType]!=RFB HMOPOS
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=PFFS&&Medicare[PlanType]!=HMO&&Medicare[PlanType]!=MMP HMO
+1/1/2026,NA,29340,0.01,PBPView[EGWP]!=1&&PBPView[RxTypeOfDrugBenefit]=4&&Medicare[ProductFocus]!^$0 Rx&&Medicare[DSNPSubType]!^LTC&&Medicare[SpecialNeedsPlanType]=Dual-Eligible&&Medicare[PlanType]!=RFB HMO
+1/1/2026,INN/OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=PFFS&&Medicare[PlanType]!=HMO
+1/1/2026,OON,29340,0.01,PBPView[EGWP]!=1&&Medicare[PlanType]!=Medicare Prescription Drug Plan&&Medicare[PlanType]!=PFFS&&Medicare[PlanType]!=HMO&&Medicare[PlanType]!=MMP HMOPOS
+1/1/2026,NA,29340,0.01,Medicare[SourceSystemPlanID]^a&&Medicare[EGWPProductType]!=Senior Supplemental&&Medicare[EGWPProductType]!=PDP

@@ -122,7 +122,7 @@ export default defineConfig({
         baseURL: process.env.BASE_URL || 'https://esync-shregress.optum.com/',
       },
       // dependencies: ['mcare-setup','setup'],
-      testMatch: '**/example.spec.ts',
+      testMatch: '**/*.spec.ts',
       timeout: 180000,
     },
 
